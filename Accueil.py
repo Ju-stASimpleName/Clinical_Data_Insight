@@ -43,7 +43,7 @@ def set_bg_hack_url():
 set_bg_hack_url()
 
 link_logo = "https://raw.githubusercontent.com/Ju-stASimpleName/Clinical_Data_Insight/main/logos/Logo_Clinical_Data_Insight_V2.png"
-st.sidebar.image(Image.open(".\logos\Logo_Clinical_Data_Insight_V2.png"), width=280, use_column_width=False)
+st.sidebar.image(Image.open("logos/Logo_Clinical_Data_Insight_V2.png"), width=280, use_column_width=False)
 
 # Masquage des info-bulles
 hide_img_fs = '''
