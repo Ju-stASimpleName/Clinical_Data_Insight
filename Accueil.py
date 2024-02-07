@@ -55,7 +55,7 @@ button[title="View fullscreen"]{
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 # Boutons dans la sidebar à gauche
-selected_page = st.sidebar.radio("", ["Accueil", "Informations", "Cancer du sein", "Diabète", "Maladies cardiaques", "Maladies du foie", "Maladie rénale chronique", "Disclaimer"])
+selected_page = st.sidebar.radio("Navigation", ["Accueil", "Informations", "Cancer du sein", "Diabète", "Maladies cardiaques", "Maladies du foie", "Maladie rénale chronique", "Disclaimer"], label_visibility=‘collapsed’)
 
 # Définir une fonction pour le contenu de chaque page
 def maladies_cardiaques():
@@ -114,10 +114,10 @@ def maladies_cardiaques():
         st.session_state.thal = st.number_input("Résultat thallium scintigraphique", value=thal, step=0.0001, format="%.4f")
 
     with col3:
-        st.write("")
+        st.write(" ")
 
     with col4:
-        st.write("")
+        st.write(" ")
     # Reset button
         if st.button("Réinitialiser les valeurs"):
             st.session_state.reset = True
@@ -193,10 +193,10 @@ def maladies_du_foie():
         st.session_state.albumin_and_globulin_ratio = st.number_input("Rapport albumine et globuline", value=albumin_and_globulin_ratio, step=0.0001, format="%.4f")
 
     with col3:
-        st.write("")
+        st.write(" ")
     
     with col4:
-        st.write("")
+        st.write(" ")
     # Reset button
         if st.button("Réinitialiser les valeurs"):
             st.session_state.reset = True
@@ -379,11 +379,11 @@ def diabete():
         st.session_state.DiabetesPedigreeFunction = st.number_input("Fonction de pédigrée diabétique", value=DiabetesPedigreeFunction, step=0.0001, format="%.4f")
 
     with col3:
-        st.write("")
+        st.write(" ")
 
     with col4:
         # Reset button
-        st.write("")
+        st.write(" ")
         if st.button("Réinitialiser les valeurs"):
             st.session_state.reset = True 
             st.session_state.Pregnancies = default_values["Pregnancies"]
@@ -451,10 +451,10 @@ def cancer_du_sein():
         st.session_state.mean_fractal_dimension = st.number_input("Dimension fractale moyenne de la cellule", value=mean_fractal_dimension, step=0.0001, format="%.4f")
 
     with col3:
-        st.write("")
+        st.write(" ")
 
     with col4:
-        st.write("")
+        st.write(" ")
         # Reset button
         if st.button("Réinitialiser les valeurs"):
             st.session_state.reset = True
@@ -530,7 +530,7 @@ elif selected_page == "Informations":
             unsafe_allow_html=True
         )
     with col2:
-        st.title("")  
+        st.title(" ")  
     with col3:
         st.markdown(
             f"""
@@ -544,7 +544,7 @@ elif selected_page == "Informations":
             unsafe_allow_html=True
         )
     with col4:
-        st.title("")
+        st.title(" ")
     with col5:
         st.markdown(
             f"""
@@ -562,7 +562,7 @@ elif selected_page == "Informations":
     col1, col2, col3, col4, col5 = st.columns([1,1,1,1,1])
 
     with col1:
-        st.title("")
+        st.title(" ")
     with col2:
         st.markdown(
             f"""
@@ -576,7 +576,7 @@ elif selected_page == "Informations":
             unsafe_allow_html=True
         )
     with col3:
-        st.title("")
+        st.title(" ")
     with col4:
         st.markdown(
             f"""
@@ -590,7 +590,7 @@ elif selected_page == "Informations":
             unsafe_allow_html=True
         )
     with col5:
-        st.title("")        
+        st.title(" ")        
 elif selected_page == "Maladies cardiaques":
     maladies_cardiaques()
 elif selected_page == "Maladies du foie":
