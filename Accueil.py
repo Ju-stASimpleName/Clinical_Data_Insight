@@ -55,7 +55,7 @@ button[title="View fullscreen"]{
 st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 # Boutons dans la sidebar à gauche
-selected_page = st.sidebar.radio("Navigation", ["Accueil", "Informations", "Cancer du sein", "Diabète", "Maladies cardiaques", "Maladies du foie", "Maladie rénale chronique", "Disclaimer"], label_visibility=‘collapsed’)
+selected_page = st.sidebar.radio("Navigation", ["Accueil", "Informations", "Cancer du sein", "Diabète", "Maladies cardiaques", "Maladies du foie", "Maladie rénale chronique", "Disclaimer"], label_visibility="collapsed")
 
 # Définir une fonction pour le contenu de chaque page
 def maladies_cardiaques():
