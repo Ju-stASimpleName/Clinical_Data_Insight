@@ -44,8 +44,7 @@ set_bg_hack_url()
 
 link_logo = "https://raw.githubusercontent.com/Ju-stASimpleName/Clinical_Data_Insight/main/logos/Logo_Clinical_Data_Insight_V2.png"
 st.sidebar.image(Image.open("logos/Logo_Clinical_Data_Insight_V2.png"), width=280, use_column_width=False)
-text_disclaimer = "Les prédictions générées par l'application ne peuvent en aucun cas se substituer à l'avis d'un professionnel de la santé.<br><br>Leur but est de fournir un support complémentaire lors du processus de prise de décision concernant d'éventuels examens complémentaires et traitements.<br><br>Il est crucial de souligner que les données que vous saisissez sont entièrement anonymisées et ne font l'objet d'aucune conservation, en stricte conformité avec les directives rigoureuses du Règlement Général de Protection des Données (RGPD)."
-st.sidebar.markdown(f'''**[DISCLAIMER]**<br>{text_disclaimer}''', unsafe_allow_html=True)
+
 # Masquage des info-bulles
 hide_img_fs = '''
 <style>
@@ -57,6 +56,8 @@ st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 # Boutons dans la sidebar à gauche
 selected_page = st.sidebar.radio("Navigation", ["Accueil", "Informations", "Cancer du sein", "Diabète", "Maladies cardiaques", "Maladies du foie", "Maladie rénale chronique"], label_visibility="collapsed")
+text_disclaimer = "Les prédictions générées par l'application ne peuvent en aucun cas se substituer à l'avis d'un professionnel de la santé.<br><br>Leur but est de fournir un support complémentaire lors du processus de prise de décision concernant d'éventuels examens complémentaires et traitements.<br><br>Il est crucial de souligner que les données que vous saisissez sont entièrement anonymisées et ne font l'objet d'aucune conservation, en stricte conformité avec les directives rigoureuses du Règlement Général de Protection des Données (RGPD)."
+st.sidebar.markdown(f'''**[DISCLAIMER]**<br>{text_disclaimer}''', unsafe_allow_html=True)
 
 # Définir une fonction pour le contenu de chaque page
 def maladies_cardiaques():
