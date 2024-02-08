@@ -56,6 +56,7 @@ st.markdown(hide_img_fs, unsafe_allow_html=True)
 
 # Boutons dans la sidebar à gauche
 selected_page = st.sidebar.radio("Navigation", ["Accueil", "Informations", "Cancer du sein", "Diabète", "Maladies cardiaques", "Maladies du foie", "Maladie rénale chronique"], label_visibility="collapsed")
+st.sidebar.write(" ")
 text_disclaimer = "Les prédictions générées par l'application ne peuvent en aucun cas se substituer à l'avis d'un professionnel de la santé.<br><br>Leur but est de fournir un support complémentaire lors du processus de prise de décision concernant d'éventuels examens complémentaires et traitements.<br><br>Il est crucial de souligner que les données que vous saisissez sont entièrement anonymisées et ne font l'objet d'aucune conservation, en stricte conformité avec les directives rigoureuses du Règlement Général de Protection des Données (RGPD)."
 st.sidebar.markdown(f'''**[DISCLAIMER]**<br>{text_disclaimer}''', unsafe_allow_html=True)
 
