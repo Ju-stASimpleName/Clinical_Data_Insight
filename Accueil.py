@@ -19,11 +19,11 @@ warnings.filterwarnings("ignore")
 # Configuration de la page
 st.set_page_config(page_title="Clinical Data Insight", page_icon=":dna:", layout="wide")
 
-st.markdown("""
-<style>
-    header, footer {visibility: hidden;}
-</style>
-""",unsafe_allow_html=True)
+#st.markdown("""
+#<style>
+#    header, footer {visibility: hidden;}
+#</style>
+#""",unsafe_allow_html=True)
 
 # Mise en place du background de l'appli
 link_background = "https://img.freepik.com/free-vector/abstract-hexagonal-shapes-banner-blue-color_1017-25909.jpg?w=1380&t=st=1707294655~exp=1707295255~hmac=060384988f7680caec7793d42e99d94b80252748acc877912eb0aed5f4088f34"
